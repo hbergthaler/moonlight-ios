@@ -26,6 +26,7 @@
 #import "TemporaryApp.h"
 #import "IdManager.h"
 #import "ConnectionHelper.h"
+#import "Moonlight-Swift.h"
 
 #if !TARGET_OS_TV
 #import "SettingsViewController.h"
@@ -226,16 +227,24 @@ static NSMutableSet* hostList;
         }
     }
 }
-    
+
 - (void) updateApplist:(NSSet*) newList forHost:(TemporaryHost*)host {
     DataManager* database = [[DataManager alloc] init];
     NSMutableSet* newHostAppList = [NSMutableSet setWithSet:host.appList];
     
     for (TemporaryApp* app in newList) {
+        AppObject *widgetApp = [[AppObject alloc] initWithId:app.id
+                                                   name:app.name
+                                            installPath:app.installPath
+                                           hdrSupported:app.hdrSupported
+                                                 hidden:app.hidden];
+        [[WidgetService sharedInstance] updateWithApp:widgetApp];
+        
         BOOL appAlreadyInList = NO;
         for (TemporaryApp* savedApp in newHostAppList) {
             if ([app.id isEqualToString:savedApp.id]) {
                 savedApp.name = app.name;
+                NSLog(@"%@", app.name);
                 savedApp.hdrSupported = app.hdrSupported;
                 // Don't propagate hidden, because we want the local data to prevail
                 appAlreadyInList = YES;

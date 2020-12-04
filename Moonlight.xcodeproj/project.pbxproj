@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A47A06A257AA58E00B449F9 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A069257AA58E00B449F9 /* Database.swift */; };
+		2A47A06B257AA58E00B449F9 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A069257AA58E00B449F9 /* Database.swift */; };
+		2A47A06F257AA6DA00B449F9 /* RealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A06E257AA6DA00B449F9 /* RealmObject.swift */; };
+		2A47A070257AA6DA00B449F9 /* RealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A06E257AA6DA00B449F9 /* RealmObject.swift */; };
+		2A47A074257AA71300B449F9 /* DatabaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A073257AA71300B449F9 /* DatabaseError.swift */; };
+		2A47A075257AA71300B449F9 /* DatabaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A073257AA71300B449F9 /* DatabaseError.swift */; };
+		2A47A079257AA74500B449F9 /* DatabaseNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A078257AA74500B449F9 /* DatabaseNotification.swift */; };
+		2A47A07A257AA74500B449F9 /* DatabaseNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A078257AA74500B449F9 /* DatabaseNotification.swift */; };
+		2A47A07E257AA7D600B449F9 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A07D257AA7D600B449F9 /* Notification.swift */; };
+		2A47A07F257AA7D600B449F9 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A07D257AA7D600B449F9 /* Notification.swift */; };
+		2A47A083257AA80900B449F9 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A082257AA80900B449F9 /* Codable.swift */; };
+		2A47A084257AA80900B449F9 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A082257AA80900B449F9 /* Codable.swift */; };
+		2A47A08C257AA85600B449F9 /* WidgetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A08B257AA85600B449F9 /* WidgetService.swift */; };
+		2A47A08D257AA85600B449F9 /* WidgetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A08B257AA85600B449F9 /* WidgetService.swift */; };
+		2A47A099257AB8F000B449F9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A47A098257AB8F000B449F9 /* WidgetKit.framework */; };
+		2A47A09B257AB8F000B449F9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A47A09A257AB8F000B449F9 /* SwiftUI.framework */; };
+		2A47A09E257AB8F000B449F9 /* GameWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A09D257AB8F000B449F9 /* GameWidget.swift */; };
+		2A47A0A0257AB8F100B449F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A47A09F257AB8F100B449F9 /* Assets.xcassets */; };
+		2A47A0A4257AB8F100B449F9 /* GameWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2A47A097257AB8F000B449F9 /* GameWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4F71F2F91F05263FC501642D /* Pods_Moonlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4398210E1792799C2A923503 /* Pods_Moonlight.framework */; };
 		693B3A9B218638CD00982F7B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 693B3A9A218638CD00982F7B /* Settings.bundle */; };
 		9819CC14254F107A008A7C8E /* RelativeTouchHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819CC13254F107A008A7C8E /* RelativeTouchHandler.m */; };
 		9819CC1D254F1730008A7C8E /* RelativeTouchHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819CC13254F107A008A7C8E /* RelativeTouchHandler.m */; };
@@ -29,6 +49,7 @@
 		98CFB82F1CAD481B0048EF74 /* libmoonlight-common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98AB2E841CAD46840089BB98 /* libmoonlight-common.a */; };
 		98D5856D1C0EA79600F6CC00 /* TemporaryHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D5856C1C0EA79600F6CC00 /* TemporaryHost.m */; };
 		98D585701C0ED0E800F6CC00 /* TemporarySettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D5856F1C0ED0E800F6CC00 /* TemporarySettings.m */; };
+		BAE633A1BCCD3D375F7BDF3B /* Pods_Moonlight_TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B018F71D11BBFDE65F473361 /* Pods_Moonlight_TV.framework */; };
 		DC1F5A07206436B20037755F /* ConnectionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1F5A06206436B20037755F /* ConnectionHelper.m */; };
 		FB1A674D2131E65900507771 /* KeyboardSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A674C2131E65900507771 /* KeyboardSupport.m */; };
 		FB1A67602132419700507771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1A675E2132419700507771 /* Main.storyboard */; };
@@ -129,6 +150,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2A47A0A2257AB8F100B449F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB290CE619B2C406004C83CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A47A096257AB8F000B449F9;
+			remoteInfo = GameWidgetExtension;
+		};
 		98AB2E831CAD46840089BB98 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 98AB2E7F1CAD46830089BB98 /* moonlight-common.xcodeproj */;
@@ -159,8 +187,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2A47A0A8257AB8F100B449F9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2A47A0A4257AB8F100B449F9 /* GameWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2A47A069257AA58E00B449F9 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		2A47A06E257AA6DA00B449F9 /* RealmObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObject.swift; sourceTree = "<group>"; };
+		2A47A073257AA71300B449F9 /* DatabaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseError.swift; sourceTree = "<group>"; };
+		2A47A078257AA74500B449F9 /* DatabaseNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseNotification.swift; sourceTree = "<group>"; };
+		2A47A07D257AA7D600B449F9 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		2A47A082257AA80900B449F9 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		2A47A08B257AA85600B449F9 /* WidgetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetService.swift; sourceTree = "<group>"; };
+		2A47A097257AB8F000B449F9 /* GameWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GameWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A47A098257AB8F000B449F9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2A47A09A257AB8F000B449F9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2A47A09D257AB8F000B449F9 /* GameWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWidget.swift; sourceTree = "<group>"; };
+		2A47A09F257AB8F100B449F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A47A0A1257AB8F100B449F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4398210E1792799C2A923503 /* Pods_Moonlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moonlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		693B3A9A218638CD00982F7B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		7A4F6387AD3B09C150F9FC0E /* Pods-Moonlight TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonlight TV.release.xcconfig"; path = "Target Support Files/Pods-Moonlight TV/Pods-Moonlight TV.release.xcconfig"; sourceTree = "<group>"; };
+		878B7322BC963334EBF9D492 /* Pods-Moonlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonlight.release.xcconfig"; path = "Target Support Files/Pods-Moonlight/Pods-Moonlight.release.xcconfig"; sourceTree = "<group>"; };
 		9803CCAB254F9EAF00EE185E /* ConnectionCallbacks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionCallbacks.h; sourceTree = "<group>"; };
 		98132E8C20BC9A62007A053F /* Moonlight v1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.1.xcdatamodel"; sourceTree = "<group>"; };
 		9819CC12254F107A008A7C8E /* RelativeTouchHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RelativeTouchHandler.h; sourceTree = "<group>"; };
@@ -186,6 +244,9 @@
 		98D5856C1C0EA79600F6CC00 /* TemporaryHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemporaryHost.m; path = Database/TemporaryHost.m; sourceTree = "<group>"; };
 		98D5856E1C0ED0E800F6CC00 /* TemporarySettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemporarySettings.h; path = Database/TemporarySettings.h; sourceTree = "<group>"; };
 		98D5856F1C0ED0E800F6CC00 /* TemporarySettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemporarySettings.m; path = Database/TemporarySettings.m; sourceTree = "<group>"; };
+		9B56FB2E98B8B5289D4E2376 /* Pods-Moonlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonlight.debug.xcconfig"; path = "Target Support Files/Pods-Moonlight/Pods-Moonlight.debug.xcconfig"; sourceTree = "<group>"; };
+		B018F71D11BBFDE65F473361 /* Pods_Moonlight_TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moonlight_TV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC119CAD46238C04CED4BA2 /* Pods-Moonlight TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonlight TV.debug.xcconfig"; path = "Target Support Files/Pods-Moonlight TV/Pods-Moonlight TV.debug.xcconfig"; sourceTree = "<group>"; };
 		D4746EEA1CBC740C006FB401 /* Moonlight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Moonlight-Bridging-Header.h"; path = "Input/Moonlight-Bridging-Header.h"; sourceTree = "<group>"; };
 		DC1F5A05206436B10037755F /* ConnectionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionHelper.h; sourceTree = "<group>"; };
 		DC1F5A06206436B20037755F /* ConnectionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionHelper.m; sourceTree = "<group>"; };
@@ -374,6 +435,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2A47A094257AB8F000B449F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A47A09B257AB8F000B449F9 /* SwiftUI.framework in Frameworks */,
+				2A47A099257AB8F000B449F9 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB1A67502132419700507771 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,6 +455,7 @@
 				FB1A67E621324DD600507771 /* libcrypto.a in Frameworks */,
 				FB1A67E721324DD600507771 /* libssl.a in Frameworks */,
 				FB1A67E521324A1F00507771 /* CoreData.framework in Frameworks */,
+				BAE633A1BCCD3D375F7BDF3B /* Pods_Moonlight_TV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,12 +473,61 @@
 				FB290CF619B2C406004C83CF /* UIKit.framework in Frameworks */,
 				FB290CF219B2C406004C83CF /* Foundation.framework in Frameworks */,
 				FB4679011A57048000377732 /* CoreFoundation.framework in Frameworks */,
+				4F71F2F91F05263FC501642D /* Pods_Moonlight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A47A087257AA82500B449F9 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2A47A069257AA58E00B449F9 /* Database.swift */,
+				2A47A06E257AA6DA00B449F9 /* RealmObject.swift */,
+				2A47A073257AA71300B449F9 /* DatabaseError.swift */,
+				2A47A078257AA74500B449F9 /* DatabaseNotification.swift */,
+				2A47A07D257AA7D600B449F9 /* Notification.swift */,
+				2A47A082257AA80900B449F9 /* Codable.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		2A47A08A257AA84100B449F9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2A47A090257AA95F00B449F9 /* Object */,
+				2A47A08B257AA85600B449F9 /* WidgetService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2A47A090257AA95F00B449F9 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		2A47A09C257AB8F000B449F9 /* GameWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2A47A09D257AB8F000B449F9 /* GameWidget.swift */,
+				2A47A09F257AB8F100B449F9 /* Assets.xcassets */,
+				2A47A0A1257AB8F100B449F9 /* Info.plist */,
+			);
+			path = GameWidget;
+			sourceTree = "<group>";
+		};
+		2A7301E3257AA2C400EF0328 /* Outakes */ = {
+			isa = PBXGroup;
+			children = (
+				2A47A08A257AA84100B449F9 /* Service */,
+				2A47A087257AA82500B449F9 /* Database */,
+			);
+			path = Outakes;
+			sourceTree = "<group>";
+		};
 		9896219423D15C2900211983 /* X1Kit */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +543,17 @@
 				FB1A68152132509400507771 /* libmoonlight-common-tv.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		996663AB17C7DB3CE1BEA630 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B56FB2E98B8B5289D4E2376 /* Pods-Moonlight.debug.xcconfig */,
+				878B7322BC963334EBF9D492 /* Pods-Moonlight.release.xcconfig */,
+				BFC119CAD46238C04CED4BA2 /* Pods-Moonlight TV.debug.xcconfig */,
+				7A4F6387AD3B09C150F9FC0E /* Pods-Moonlight TV.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		FB1A67542132419700507771 /* Moonlight TV */ = {
@@ -444,8 +575,10 @@
 				98AB2E7F1CAD46830089BB98 /* moonlight-common.xcodeproj */,
 				FB290CF919B2C406004C83CF /* Moonlight */,
 				FB1A67542132419700507771 /* Moonlight TV */,
+				2A47A09C257AB8F000B449F9 /* GameWidget */,
 				FB290CF019B2C406004C83CF /* Frameworks */,
 				FB290CEF19B2C406004C83CF /* Products */,
+				996663AB17C7DB3CE1BEA630 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -454,6 +587,7 @@
 			children = (
 				FB290CEE19B2C406004C83CF /* Moonlight.app */,
 				FB1A67532132419700507771 /* Moonlight TV.app */,
+				2A47A097257AB8F000B449F9 /* GameWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -471,6 +605,10 @@
 				FB290CF319B2C406004C83CF /* CoreGraphics.framework */,
 				FB290CF519B2C406004C83CF /* UIKit.framework */,
 				FB290CF719B2C406004C83CF /* CoreData.framework */,
+				4398210E1792799C2A923503 /* Pods_Moonlight.framework */,
+				B018F71D11BBFDE65F473361 /* Pods_Moonlight_TV.framework */,
+				2A47A098257AB8F000B449F9 /* WidgetKit.framework */,
+				2A47A09A257AB8F000B449F9 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -479,6 +617,7 @@
 			isa = PBXGroup;
 			children = (
 				D4746EEA1CBC740C006FB401 /* Moonlight-Bridging-Header.h */,
+				2A7301E3257AA2C400EF0328 /* Outakes */,
 				FB89460419F646E200339C8A /* Crypto */,
 				FB89460919F646E200339C8A /* Input */,
 				FB89460E19F646E200339C8A /* Network */,
@@ -828,13 +967,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2A47A096257AB8F000B449F9 /* GameWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A47A0A5257AB8F100B449F9 /* Build configuration list for PBXNativeTarget "GameWidgetExtension" */;
+			buildPhases = (
+				2A47A093257AB8F000B449F9 /* Sources */,
+				2A47A094257AB8F000B449F9 /* Frameworks */,
+				2A47A095257AB8F000B449F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameWidgetExtension;
+			productName = GameWidgetExtension;
+			productReference = 2A47A097257AB8F000B449F9 /* GameWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FB1A67522132419700507771 /* Moonlight TV */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB1A67682132419A00507771 /* Build configuration list for PBXNativeTarget "Moonlight TV" */;
 			buildPhases = (
+				300EF4394EA9F961F40A9747 /* [CP] Check Pods Manifest.lock */,
 				FB1A674F2132419700507771 /* Sources */,
 				FB1A67502132419700507771 /* Frameworks */,
 				FB1A67512132419700507771 /* Resources */,
+				F02407721A7E7ED6DE3B8B62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -850,14 +1008,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB290D2019B2C406004C83CF /* Build configuration list for PBXNativeTarget "Moonlight" */;
 			buildPhases = (
+				34F09B396C9F4DA2A860E7AB /* [CP] Check Pods Manifest.lock */,
 				FB290CEA19B2C406004C83CF /* Sources */,
 				FB290CEB19B2C406004C83CF /* Frameworks */,
 				FB290CEC19B2C406004C83CF /* Resources */,
+				877101E7B9DF8B6DD80298A1 /* [CP] Embed Pods Frameworks */,
+				2A47A0A8257AB8F100B449F9 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				98AB2E861CAD468B0089BB98 /* PBXTargetDependency */,
+				2A47A0A3257AB8F100B449F9 /* PBXTargetDependency */,
 			);
 			name = Moonlight;
 			productName = Limelight;
@@ -870,10 +1032,14 @@
 		FB290CE619B2C406004C83CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Moonlight Game Streaming Project";
 				TargetAttributes = {
+					2A47A096257AB8F000B449F9 = {
+						CreatedOnToolsVersion = 12.2;
+						ProvisioningStyle = Automatic;
+					};
 					FB1A67522132419700507771 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1140;
@@ -885,7 +1051,6 @@
 						};
 					};
 					FB290CED19B2C406004C83CF = {
-						DevelopmentTeam = DM46QST4M7;
 						LastSwiftMigration = 1140;
 					};
 				};
@@ -911,6 +1076,7 @@
 			targets = (
 				FB290CED19B2C406004C83CF /* Moonlight */,
 				FB1A67522132419700507771 /* Moonlight TV */,
+				2A47A096257AB8F000B449F9 /* GameWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -933,6 +1099,14 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2A47A095257AB8F000B449F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A47A0A0257AB8F100B449F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB1A67512132419700507771 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -958,7 +1132,102 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		300EF4394EA9F961F40A9747 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moonlight TV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34F09B396C9F4DA2A860E7AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moonlight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		877101E7B9DF8B6DD80298A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moonlight/Pods-Moonlight-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moonlight/Pods-Moonlight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F02407721A7E7ED6DE3B8B62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moonlight TV/Pods-Moonlight TV-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moonlight TV/Pods-Moonlight TV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2A47A093257AB8F000B449F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A47A09E257AB8F000B449F9 /* GameWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB1A674F2132419700507771 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -979,31 +1248,38 @@
 				FB1A67E02132460A00507771 /* Logger.m in Sources */,
 				FB1A67D52132460400507771 /* ControllerSupport.m in Sources */,
 				FB1A67D82132460400507771 /* StreamView.m in Sources */,
+				2A47A07F257AA7D600B449F9 /* Notification.swift in Sources */,
 				9896219A23D56E8100211983 /* X1Kit.swift in Sources */,
 				FB1A67DA2132460400507771 /* OnScreenControls.m in Sources */,
 				FB1A67DC2132460400507771 /* KeyboardSupport.m in Sources */,
 				FB1A67CD213245F800507771 /* DataManager.m in Sources */,
 				FB1A67CF213245F800507771 /* TemporaryApp.m in Sources */,
 				FB1A67D1213245F800507771 /* TemporaryHost.m in Sources */,
+				2A47A06B257AA58E00B449F9 /* Database.swift in Sources */,
 				FB1A67D3213245F800507771 /* TemporarySettings.m in Sources */,
 				FB1A67C3213245EA00507771 /* AppAssetManager.m in Sources */,
 				FB1A67C5213245EA00507771 /* AppAssetRetriever.m in Sources */,
 				FB1A67C7213245EA00507771 /* PairManager.m in Sources */,
 				FB1A67C9213245EA00507771 /* WakeOnLanManager.m in Sources */,
 				FB1A67CB213245EA00507771 /* ConnectionHelper.m in Sources */,
+				2A47A075257AA71300B449F9 /* DatabaseError.swift in Sources */,
 				FB1A67BD213245E000507771 /* DiscoveryManager.m in Sources */,
 				FB1A67BF213245E000507771 /* DiscoveryWorker.m in Sources */,
 				FB1A67C1213245E000507771 /* MDNSManager.m in Sources */,
 				FB1A67B1213245D500507771 /* HttpManager.m in Sources */,
+				2A47A084257AA80900B449F9 /* Codable.swift in Sources */,
 				FB1A67B3213245D500507771 /* HttpRequest.m in Sources */,
 				FB1A67B5213245D500507771 /* HttpResponse.m in Sources */,
+				2A47A07A257AA74500B449F9 /* DatabaseNotification.swift in Sources */,
 				FB1A67B7213245D500507771 /* ServerInfoResponse.m in Sources */,
 				FB1A67B9213245D500507771 /* AppAssetResponse.m in Sources */,
 				FB1A67BB213245D500507771 /* AppListResponse.m in Sources */,
+				2A47A070257AA6DA00B449F9 /* RealmObject.swift in Sources */,
 				9819CC1D254F1730008A7C8E /* RelativeTouchHandler.m in Sources */,
 				FB1A67AB213245C500507771 /* CryptoManager.m in Sources */,
 				FB1A67AF213245C500507771 /* IdManager.m in Sources */,
 				FB1A67A3213245BD00507771 /* Connection.m in Sources */,
+				2A47A08D257AA85600B449F9 /* WidgetService.swift in Sources */,
 				FB1A67A5213245BD00507771 /* StreamConfiguration.m in Sources */,
 				FB1A67A7213245BD00507771 /* StreamManager.m in Sources */,
 				FB1A67A9213245BD00507771 /* VideoDecoderRenderer.m in Sources */,
@@ -1025,8 +1301,11 @@
 				FB89463419F646E200339C8A /* Utils.m in Sources */,
 				FBDE86E619F82297001C18A8 /* UIAppView.m in Sources */,
 				FB89462F19F646E200339C8A /* Connection.m in Sources */,
+				2A47A07E257AA7D600B449F9 /* Notification.swift in Sources */,
 				FB9AFD321A7D867C00872C98 /* AppAssetRetriever.m in Sources */,
 				FB4678FF1A565DAC00377732 /* WakeOnLanManager.m in Sources */,
+				2A47A06A257AA58E00B449F9 /* Database.swift in Sources */,
+				2A47A083257AA80900B449F9 /* Codable.swift in Sources */,
 				FB53E1431BE5DC4400CD6ECE /* IdManager.m in Sources */,
 				9897B6A1221260EF00966419 /* Controller.m in Sources */,
 				FB89462919F646E200339C8A /* mkcert.c in Sources */,
@@ -1034,6 +1313,8 @@
 				FBDE86E019F7A837001C18A8 /* UIComputerView.m in Sources */,
 				FB89463019F646E200339C8A /* StreamConfiguration.m in Sources */,
 				FBD3495319FF36FB002D2A60 /* SWRevealViewController.m in Sources */,
+				2A47A074257AA71300B449F9 /* DatabaseError.swift in Sources */,
+				2A47A079257AA74500B449F9 /* DatabaseNotification.swift in Sources */,
 				FB1D59971BBCCB6400F482CA /* ComputerScrollView.m in Sources */,
 				FBD3495019FF2174002D2A60 /* SettingsViewController.m in Sources */,
 				FB89462C19F646E200339C8A /* HttpManager.m in Sources */,
@@ -1052,6 +1333,8 @@
 				DC1F5A07206436B20037755F /* ConnectionHelper.m in Sources */,
 				FB89462E19F646E200339C8A /* PairManager.m in Sources */,
 				FB9AFD371A7E02DB00872C98 /* HttpRequest.m in Sources */,
+				2A47A08C257AA85600B449F9 /* WidgetService.swift in Sources */,
+				2A47A06F257AA6DA00B449F9 /* RealmObject.swift in Sources */,
 				FB4678ED1A50C40900377732 /* OnScreenControls.m in Sources */,
 				FB290D0019B2C406004C83CF /* main.m in Sources */,
 				9896219723D15C7000211983 /* X1Kit.swift in Sources */,
@@ -1069,6 +1352,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2A47A0A3257AB8F100B449F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A47A096257AB8F000B449F9 /* GameWidgetExtension */;
+			targetProxy = 2A47A0A2257AB8F100B449F9 /* PBXContainerItemProxy */;
+		};
 		98AB2E861CAD468B0089BB98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "moonlight-common";
@@ -1101,8 +1389,73 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2A47A0A6257AB8F100B449F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BRAEJC7PYC;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = GameWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = at.outakes.Moonlight.GameWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A47A0A7257AB8F100B449F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BRAEJC7PYC;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = GameWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = at.outakes.Moonlight.GameWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FB1A67662132419A00507771 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFC119CAD46238C04CED4BA2 /* Pods-Moonlight TV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
@@ -1114,7 +1467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = DM46QST4M7;
+				DEVELOPMENT_TEAM = BRAEJC7PYC;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1133,7 +1486,7 @@
 				);
 				MARKETING_VERSION = 7.0.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moonlight-stream.Moonlight";
+				PRODUCT_BUNDLE_IDENTIFIER = at.outakes.Moonlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Limelight/Input/Moonlight-Bridging-Header.h";
@@ -1147,6 +1500,7 @@
 		};
 		FB1A67672132419A00507771 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4F6387AD3B09C150F9FC0E /* Pods-Moonlight TV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
@@ -1159,7 +1513,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = DM46QST4M7;
+				DEVELOPMENT_TEAM = BRAEJC7PYC;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1178,7 +1532,7 @@
 				);
 				MARKETING_VERSION = 7.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moonlight-stream.Moonlight";
+				PRODUCT_BUNDLE_IDENTIFIER = at.outakes.Moonlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -1300,12 +1654,15 @@
 		};
 		FB290D2119B2C406004C83CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B56FB2E98B8B5289D4E2376 /* Pods-Moonlight.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BRAEJC7PYC;
 				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Limelight/Limelight-Prefix.pch";
@@ -1324,7 +1681,7 @@
 					"$(PROJECT_DIR)/libs/openssl/lib/iOS",
 				);
 				MARKETING_VERSION = 7.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moonlight-stream.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = at.outakes.Moonlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = NO;
@@ -1339,12 +1696,15 @@
 		};
 		FB290D2219B2C406004C83CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 878B7322BC963334EBF9D492 /* Pods-Moonlight.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BRAEJC7PYC;
 				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Limelight/Limelight-Prefix.pch";
@@ -1363,7 +1723,7 @@
 					"$(PROJECT_DIR)/libs/openssl/lib/iOS",
 				);
 				MARKETING_VERSION = 7.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moonlight-stream.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = at.outakes.Moonlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = NO;
@@ -1379,6 +1739,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2A47A0A5257AB8F100B449F9 /* Build configuration list for PBXNativeTarget "GameWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A47A0A6257AB8F100B449F9 /* Debug */,
+				2A47A0A7257AB8F100B449F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FB1A67682132419A00507771 /* Build configuration list for PBXNativeTarget "Moonlight TV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

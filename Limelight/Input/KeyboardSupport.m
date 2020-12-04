@@ -24,12 +24,16 @@
     if (key.modifierFlags & (UIKeyModifierControl | UIKeyModifierCommand)) {
         modifierFlags |= MODIFIER_CTRL;
     }
-    
+
     // This converts UIKeyboardHIDUsage values to Win32 VK_* values
     // https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
     if (key.keyCode >= UIKeyboardHIDUsageKeyboardA &&
         key.keyCode <= UIKeyboardHIDUsageKeyboardZ) {
         keyCode = (key.keyCode - UIKeyboardHIDUsageKeyboardA) + 0x41;
+    }
+    else if (key.keyCode == 100) {
+        NSLog(@"Success");
+        keyCode = 0x1B;
     }
     else if (key.keyCode == UIKeyboardHIDUsageKeyboard0) {
         // This key is at the beginning of the VK_ range but the end

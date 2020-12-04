@@ -1,0 +1,6 @@
+framework module Pods_Moonlight {
+  umbrella header "Pods-Moonlight-umbrella.h"
+
+  export *
+  module * { export * }
+}
