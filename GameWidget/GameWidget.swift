@@ -3,6 +3,10 @@
 import WidgetKit
 import SwiftUI
 
+//Alternatively, if future events are unpredictable, you can tell WidgetKit to not request a new timeline at all by specifying .never for the policy. In that case, your app calls the WidgetCenter function reloadTimelines(ofKind:) when a new timeline is available. Some examples of when using .never makes sense include:
+//When the user has a widget configured to display the health of a character, but that character is no longer actively engaging in battle and its health level won’t change.
+//When a widget’s content is dependent on the user being logged into an account and they aren’t currently logged in.
+
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date())
@@ -29,11 +33,12 @@ struct Provider: TimelineProvider {
     }
 }
 
+// Data what should be shown
 struct SimpleEntry: TimelineEntry {
     let date: Date
 }
 
-struct GameWidgetEntryView : View {
+struct GameWidgetEntryView: View {
     var entry: Provider.Entry
 
     var body: some View {
@@ -50,13 +55,13 @@ struct GameWidget: Widget {
             GameWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .description("s is an example widget.")
     }
 }
 
 struct GameWidget_Previews: PreviewProvider {
     static var previews: some View {
         GameWidgetEntryView(entry: SimpleEntry(date: Date()))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }

@@ -3,9 +3,9 @@
 import Foundation
 
 protocol DatabaseNotification: Codable {
-    var id: UUID { get }
+    var id: String { get }
 }
 
 struct DefaultDatabaseNotification: DatabaseNotification {
-    let id: UUID
+    let id: String
 }

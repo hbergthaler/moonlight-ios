@@ -2,10 +2,14 @@
 
 import Foundation
 
+@available(iOS 13.0, *)
 @objc
 class WidgetService: NSObject {
     
     static let shared = WidgetService()
+    
+    private let actionHandler = ActionHandler()
+    private let appService = AppService()
     
     // MARK: -
     
@@ -18,33 +22,46 @@ class WidgetService: NSObject {
     }
     
     @objc
-    func update(app: AppObject) {
-        print("\(app.name)")
+    func updateApp(id: String,
+                   name: String,
+                   installPath: String,
+                   hdrSupported: Bool,
+                   hidden: Bool) {
+        let app = AppObject(id: id,
+                          name: name,
+                          installPath: installPath,
+                          hdrSupported: hdrSupported,
+                          hidden: hidden)
+        
+        actionHandler.start { close in
+            appService
+                .update(app)
+                .sink { completion in
+                    switch completion {
+                    case .finished:
+                        print("OUTAKES: Finished saving: \(app.name)")
+                    case .failure(let error):
+                        print("OUTAKES: \(error)")
+                    }
+                    
+                    close()
+                }
+        }
     }
     
-}
-
-@objc
-class AppObject: NSObject {
-    let id: String
-    let name: String
-    let installPath: String
-    let hdrSupported: Bool
-    let hidden: Bool
-    
-    // MARK: -
-    
     @objc
-    init(id: String,
-         name: String,
-         installPath: String,
-         hdrSupported: Bool,
-         hidden: Bool) {
-        self.id = id
-        self.name = name
-        self.installPath = installPath
-        self.hdrSupported = hdrSupported
-        self.hidden = hidden
+    func testDatabase() {
+        actionHandler.start { close in
+            appService
+                .publisher()
+                .collect()
+                .sink { _ in
+                    close()
+                } receiveValue: { apps in
+                    apps.forEach { print("Saved: \($0)") }
+                }
+        }
+        
     }
     
 }

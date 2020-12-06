@@ -15,8 +15,16 @@ struct Database<OBJECT, NOTIFICATION> where OBJECT: RealmObject, NOTIFICATION: D
     private var deleteNotificationName: String {
         String(describing: OBJECT.self).appending(".delete")
     }
+    private var sharedContainerURL: URL {
+        FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.at.outakes.gamestream")!
+    }
     
-    func database() throws -> Realm { try .init() }
+    func database() throws -> Realm {
+        let realmLocation = sharedContainerURL
+            .appendingPathComponent("database.realm")
+        
+        return try Realm(fileURL: realmLocation)
+    }
     
     func count(filter: String? = nil) -> AnyPublisher<Int, DatabaseError> {
         Future<Int, DatabaseError> { promise in
@@ -66,8 +74,8 @@ struct Database<OBJECT, NOTIFICATION> where OBJECT: RealmObject, NOTIFICATION: D
     }
     
     func update(getUpdateObject: @escaping GetUpdateObject,
-                createNotification: CreateNotificationInfo? = nil) -> AnyPublisher<UUID, DatabaseError> {
-        Future<UUID, DatabaseError> { promise in
+                createNotification: CreateNotificationInfo? = nil) -> AnyPublisher<String, DatabaseError> {
+        Future<String, DatabaseError> { promise in
             DispatchQueue(label: "Realm").async {
                 autoreleasepool {
                     do {
@@ -78,13 +86,13 @@ struct Database<OBJECT, NOTIFICATION> where OBJECT: RealmObject, NOTIFICATION: D
                             realm.add(object, update: .modified)
                         }
                         
-                        let notification = try createNotification?(object) ?? DefaultDatabaseNotification(id: try object.convertId())
+                        let notification = try createNotification?(object) ?? DefaultDatabaseNotification(id: object.id)
                         NotificationCenter.default.post(name: .name(updateNotificationName),
                                                         object: nil,
                                                         userInfo: notification.dictionary())
                         
                         
-                        promise(.success(try object.convertId()))
+                        promise(.success(object.id))
                     } catch {
                         promise(.failure(convertDatabaseError(error: error)))
                     }
@@ -95,14 +103,14 @@ struct Database<OBJECT, NOTIFICATION> where OBJECT: RealmObject, NOTIFICATION: D
     }
     
     func delete(id: UUID,
-                   createNotification: CreateNotificationInfo? = nil) -> AnyPublisher<UUID, DatabaseError> {
+                   createNotification: CreateNotificationInfo? = nil) -> AnyPublisher<String, DatabaseError> {
         delete(filter: "id = '\(id)'",
                   createNotification: createNotification)
     }
     
     func delete(filter: String,
-                   createNotification: CreateNotificationInfo? = nil) -> AnyPublisher<UUID, DatabaseError> {
-        let subject = PassthroughSubject<UUID, DatabaseError>()
+                   createNotification: CreateNotificationInfo? = nil) -> AnyPublisher<String, DatabaseError> {
+        let subject = PassthroughSubject<String, DatabaseError>()
         
         DispatchQueue(label: "Realm").async {
             autoreleasepool {
@@ -110,8 +118,8 @@ struct Database<OBJECT, NOTIFICATION> where OBJECT: RealmObject, NOTIFICATION: D
                     let realm = try database()
                     let objects = getResults(from: realm, filter: filter)
                     for object in objects {
-                        let notification = try createNotification?(object) ?? DefaultDatabaseNotification(id: try object.convertId())
-                        let id = try object.convertId()
+                        let notification = try createNotification?(object) ?? DefaultDatabaseNotification(id: object.id)
+                        let id = object.id
                         
                         try realm.write {
                             realm.delete(object)

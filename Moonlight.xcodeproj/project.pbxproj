@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A061D96257D20F300B8C7AC /* AppObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A061D95257D20F300B8C7AC /* AppObject.swift */; };
+		2A061D97257D20F300B8C7AC /* AppObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A061D95257D20F300B8C7AC /* AppObject.swift */; };
+		2A061D98257D20F300B8C7AC /* AppObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A061D95257D20F300B8C7AC /* AppObject.swift */; };
+		2A061D9E257D228200B8C7AC /* AppRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A061D9D257D228200B8C7AC /* AppRealmObject.swift */; };
+		2A061D9F257D228200B8C7AC /* AppRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A061D9D257D228200B8C7AC /* AppRealmObject.swift */; };
+		2A061DA5257D248200B8C7AC /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A061DA4257D248200B8C7AC /* AppService.swift */; };
+		2A061DA6257D248200B8C7AC /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A061DA4257D248200B8C7AC /* AppService.swift */; };
+		2A061DB1257D251700B8C7AC /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A061DB0257D251700B8C7AC /* Extenstions.swift */; };
+		2A061DB2257D251700B8C7AC /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A061DB0257D251700B8C7AC /* Extenstions.swift */; };
+		2A061DB7257D25E400B8C7AC /* ActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A061DB6257D25E400B8C7AC /* ActionHandler.swift */; };
+		2A061DB8257D25E400B8C7AC /* ActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A061DB6257D25E400B8C7AC /* ActionHandler.swift */; };
 		2A47A06A257AA58E00B449F9 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A069257AA58E00B449F9 /* Database.swift */; };
 		2A47A06B257AA58E00B449F9 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A069257AA58E00B449F9 /* Database.swift */; };
 		2A47A06F257AA6DA00B449F9 /* RealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A06E257AA6DA00B449F9 /* RealmObject.swift */; };
@@ -202,6 +213,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A061D87257D1E1B00B8C7AC /* Moonlight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Moonlight.entitlements; sourceTree = SOURCE_ROOT; };
+		2A061D95257D20F300B8C7AC /* AppObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppObject.swift; sourceTree = "<group>"; };
+		2A061D9D257D228200B8C7AC /* AppRealmObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRealmObject.swift; sourceTree = "<group>"; };
+		2A061DA4257D248200B8C7AC /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		2A061DB0257D251700B8C7AC /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
+		2A061DB6257D25E400B8C7AC /* ActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionHandler.swift; sourceTree = "<group>"; };
 		2A47A069257AA58E00B449F9 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		2A47A06E257AA6DA00B449F9 /* RealmObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObject.swift; sourceTree = "<group>"; };
 		2A47A073257AA71300B449F9 /* DatabaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseError.swift; sourceTree = "<group>"; };
@@ -480,6 +497,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A061D9C257D224F00B8C7AC /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				2A061D9D257D228200B8C7AC /* AppRealmObject.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		2A061DA3257D247200B8C7AC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2A061DA4257D248200B8C7AC /* AppService.swift */,
+				2A061D9C257D224F00B8C7AC /* Logic */,
+				2A47A090257AA95F00B449F9 /* Object */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		2A47A087257AA82500B449F9 /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,6 +524,8 @@
 				2A47A078257AA74500B449F9 /* DatabaseNotification.swift */,
 				2A47A07D257AA7D600B449F9 /* Notification.swift */,
 				2A47A082257AA80900B449F9 /* Codable.swift */,
+				2A061DB0257D251700B8C7AC /* Extenstions.swift */,
+				2A061DB6257D25E400B8C7AC /* ActionHandler.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -496,7 +533,7 @@
 		2A47A08A257AA84100B449F9 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				2A47A090257AA95F00B449F9 /* Object */,
+				2A061DA3257D247200B8C7AC /* App */,
 				2A47A08B257AA85600B449F9 /* WidgetService.swift */,
 			);
 			path = Service;
@@ -505,6 +542,7 @@
 		2A47A090257AA95F00B449F9 /* Object */ = {
 			isa = PBXGroup;
 			children = (
+				2A061D95257D20F300B8C7AC /* AppObject.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -616,6 +654,7 @@
 		FB290CF919B2C406004C83CF /* Moonlight */ = {
 			isa = PBXGroup;
 			children = (
+				2A061D87257D1E1B00B8C7AC /* Moonlight.entitlements */,
 				D4746EEA1CBC740C006FB401 /* Moonlight-Bridging-Header.h */,
 				2A7301E3257AA2C400EF0328 /* Outakes */,
 				FB89460419F646E200339C8A /* Crypto */,
@@ -1224,6 +1263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A061D98257D20F300B8C7AC /* AppObject.swift in Sources */,
 				2A47A09E257AB8F000B449F9 /* GameWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1233,6 +1273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9827E7A42514366900F25707 /* HapticContext.m in Sources */,
+				2A061DB8257D25E400B8C7AC /* ActionHandler.swift in Sources */,
 				9897B6A62212732C00966419 /* Controller.m in Sources */,
 				9865DC3E21332D660005B9B9 /* MainFrameViewController.m in Sources */,
 				9865DC36213287F30005B9B9 /* AppDelegate.m in Sources */,
@@ -1248,9 +1289,11 @@
 				FB1A67E02132460A00507771 /* Logger.m in Sources */,
 				FB1A67D52132460400507771 /* ControllerSupport.m in Sources */,
 				FB1A67D82132460400507771 /* StreamView.m in Sources */,
+				2A061DB2257D251700B8C7AC /* Extenstions.swift in Sources */,
 				2A47A07F257AA7D600B449F9 /* Notification.swift in Sources */,
 				9896219A23D56E8100211983 /* X1Kit.swift in Sources */,
 				FB1A67DA2132460400507771 /* OnScreenControls.m in Sources */,
+				2A061D97257D20F300B8C7AC /* AppObject.swift in Sources */,
 				FB1A67DC2132460400507771 /* KeyboardSupport.m in Sources */,
 				FB1A67CD213245F800507771 /* DataManager.m in Sources */,
 				FB1A67CF213245F800507771 /* TemporaryApp.m in Sources */,
@@ -1271,6 +1314,7 @@
 				FB1A67B3213245D500507771 /* HttpRequest.m in Sources */,
 				FB1A67B5213245D500507771 /* HttpResponse.m in Sources */,
 				2A47A07A257AA74500B449F9 /* DatabaseNotification.swift in Sources */,
+				2A061DA6257D248200B8C7AC /* AppService.swift in Sources */,
 				FB1A67B7213245D500507771 /* ServerInfoResponse.m in Sources */,
 				FB1A67B9213245D500507771 /* AppAssetResponse.m in Sources */,
 				FB1A67BB213245D500507771 /* AppListResponse.m in Sources */,
@@ -1283,6 +1327,7 @@
 				FB1A67A5213245BD00507771 /* StreamConfiguration.m in Sources */,
 				FB1A67A7213245BD00507771 /* StreamManager.m in Sources */,
 				FB1A67A9213245BD00507771 /* VideoDecoderRenderer.m in Sources */,
+				2A061D9F257D228200B8C7AC /* AppRealmObject.swift in Sources */,
 				FB1A67A12132458C00507771 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1310,9 +1355,11 @@
 				9897B6A1221260EF00966419 /* Controller.m in Sources */,
 				FB89462919F646E200339C8A /* mkcert.c in Sources */,
 				FB9AFD281A7C84ED00872C98 /* HttpResponse.m in Sources */,
+				2A061DB1257D251700B8C7AC /* Extenstions.swift in Sources */,
 				FBDE86E019F7A837001C18A8 /* UIComputerView.m in Sources */,
 				FB89463019F646E200339C8A /* StreamConfiguration.m in Sources */,
 				FBD3495319FF36FB002D2A60 /* SWRevealViewController.m in Sources */,
+				2A061D9E257D228200B8C7AC /* AppRealmObject.swift in Sources */,
 				2A47A074257AA71300B449F9 /* DatabaseError.swift in Sources */,
 				2A47A079257AA74500B449F9 /* DatabaseNotification.swift in Sources */,
 				FB1D59971BBCCB6400F482CA /* ComputerScrollView.m in Sources */,
@@ -1341,10 +1388,13 @@
 				FBD3494319FC9C04002D2A60 /* AppAssetManager.m in Sources */,
 				FB6549561A57907E001C8F39 /* DiscoveryWorker.m in Sources */,
 				FB89462A19F646E200339C8A /* ControllerSupport.m in Sources */,
+				2A061DA5257D248200B8C7AC /* AppService.swift in Sources */,
+				2A061D96257D20F300B8C7AC /* AppObject.swift in Sources */,
 				FB9AFD3D1A7E111600872C98 /* AppAssetResponse.m in Sources */,
 				FBD349621A0089F6002D2A60 /* DataManager.m in Sources */,
 				FB4A23B81A9D3637004D2EF2 /* LoadingFrameViewController.m in Sources */,
 				FB9AFD3A1A7E05CE00872C98 /* ServerInfoResponse.m in Sources */,
+				2A061DB7257D25E400B8C7AC /* ActionHandler.swift in Sources */,
 				FB89463119F646E200339C8A /* StreamManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1659,6 +1709,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Moonlight.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1701,6 +1752,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Moonlight.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;

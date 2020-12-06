@@ -233,12 +233,13 @@ static NSMutableSet* hostList;
     NSMutableSet* newHostAppList = [NSMutableSet setWithSet:host.appList];
     
     for (TemporaryApp* app in newList) {
-        AppObject *widgetApp = [[AppObject alloc] initWithId:app.id
-                                                   name:app.name
-                                            installPath:app.installPath
-                                           hdrSupported:app.hdrSupported
-                                                 hidden:app.hidden];
-        [[WidgetService sharedInstance] updateWithApp:widgetApp];
+        if (@available(iOS 14.0, *)) {
+            [[WidgetService sharedInstance] updateAppWithId:app.id
+                                                       name:app.name
+                                                installPath:app.installPath
+                                               hdrSupported:app.hdrSupported
+                                                     hidden:app.hidden];
+        }
         
         BOOL appAlreadyInList = NO;
         for (TemporaryApp* savedApp in newHostAppList) {
