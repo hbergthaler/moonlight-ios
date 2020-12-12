@@ -37,6 +37,8 @@
 		2A47A09E257AB8F000B449F9 /* GameWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47A09D257AB8F000B449F9 /* GameWidget.swift */; };
 		2A47A0A0257AB8F100B449F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A47A09F257AB8F100B449F9 /* Assets.xcassets */; };
 		2A47A0A4257AB8F100B449F9 /* GameWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2A47A097257AB8F000B449F9 /* GameWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2AA3A06925853AF200B2D584 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA3A06825853AF200B2D584 /* TestViewController.swift */; };
+		2AA3A06A25853AF200B2D584 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA3A06825853AF200B2D584 /* TestViewController.swift */; };
 		4F71F2F91F05263FC501642D /* Pods_Moonlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4398210E1792799C2A923503 /* Pods_Moonlight.framework */; };
 		693B3A9B218638CD00982F7B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 693B3A9A218638CD00982F7B /* Settings.bundle */; };
 		9819CC14254F107A008A7C8E /* RelativeTouchHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819CC13254F107A008A7C8E /* RelativeTouchHandler.m */; };
@@ -232,6 +234,7 @@
 		2A47A09D257AB8F000B449F9 /* GameWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWidget.swift; sourceTree = "<group>"; };
 		2A47A09F257AB8F100B449F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A47A0A1257AB8F100B449F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AA3A06825853AF200B2D584 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		4398210E1792799C2A923503 /* Pods_Moonlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moonlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		693B3A9A218638CD00982F7B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		7A4F6387AD3B09C150F9FC0E /* Pods-Moonlight TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonlight TV.release.xcconfig"; path = "Target Support Files/Pods-Moonlight TV/Pods-Moonlight TV.release.xcconfig"; sourceTree = "<group>"; };
@@ -560,10 +563,27 @@
 		2A7301E3257AA2C400EF0328 /* Outakes */ = {
 			isa = PBXGroup;
 			children = (
+				2AA3A066258537B400B2D584 /* Presentation */,
 				2A47A08A257AA84100B449F9 /* Service */,
 				2A47A087257AA82500B449F9 /* Database */,
 			);
 			path = Outakes;
+			sourceTree = "<group>";
+		};
+		2AA3A066258537B400B2D584 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2AA3A067258537C400B2D584 /* TestViewController */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2AA3A067258537C400B2D584 /* TestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2AA3A06825853AF200B2D584 /* TestViewController.swift */,
+			);
+			path = TestViewController;
 			sourceTree = "<group>";
 		};
 		9896219423D15C2900211983 /* X1Kit */ = {
@@ -1326,6 +1346,7 @@
 				2A47A08D257AA85600B449F9 /* WidgetService.swift in Sources */,
 				FB1A67A5213245BD00507771 /* StreamConfiguration.m in Sources */,
 				FB1A67A7213245BD00507771 /* StreamManager.m in Sources */,
+				2AA3A06A25853AF200B2D584 /* TestViewController.swift in Sources */,
 				FB1A67A9213245BD00507771 /* VideoDecoderRenderer.m in Sources */,
 				2A061D9F257D228200B8C7AC /* AppRealmObject.swift in Sources */,
 				FB1A67A12132458C00507771 /* main.m in Sources */,
@@ -1336,6 +1357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA3A06925853AF200B2D584 /* TestViewController.swift in Sources */,
 				FB290D0719B2C406004C83CF /* Limelight.xcdatamodeld in Sources */,
 				9819CC22254F180F008A7C8E /* AbsoluteTouchHandler.m in Sources */,
 				9819CC14254F107A008A7C8E /* RelativeTouchHandler.m in Sources */,

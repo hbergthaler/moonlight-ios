@@ -897,7 +897,8 @@ static NSMutableSet* hostList;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        
+      
+/// UI Code
 #if !TARGET_OS_TV
     // Set the side bar button action. When it's tapped, it'll show the sidebar.
     [_settingsButton setTarget:self.revealViewController];

@@ -1,3 +1,30 @@
 //
 //  Use this file to import your target's public headers that you would like to expose to Swift.
 //
+
+#import <UIKit/UIKit.h>
+#import "DiscoveryManager.h"
+//#import "CryptoManager.h"
+//#import "HttpManager.h"
+//#import "Connection.h"
+//#import "StreamManager.h"
+//#import "Utils.h"
+//#import "UIComputerView.h"
+//#import "UIAppView.h"
+//#import "DataManager.h"
+//#import "TemporarySettings.h"
+//#import "WakeOnLanManager.h"
+//#import "AppListResponse.h"
+//#import "ServerInfoResponse.h"
+//#import "StreamFrameViewController.h"
+//#import "LoadingFrameViewController.h"
+//#import "ComputerScrollView.h"
+//#import "TemporaryApp.h"
+//#import "IdManager.h"
+//#import "ConnectionHelper.h"
+//#import "PairManager.h"
+//#import "StreamConfiguration.h"
+//#import "UIComputerView.h"
+//#import "UIAppView.h"
+//#import "AppAssetManager.h"
+//#import "SWRevealViewController.h"
